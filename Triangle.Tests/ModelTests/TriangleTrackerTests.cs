@@ -14,6 +14,12 @@ public void IsTriangleTracker_CreateTriangleWithThreeLengths_Triangle()
   // any necessary logic to prep for test; instantiating new classes, etc.
   Assert.AreEqual("Triangle", testTriangle.IsTriangleTracker());
 }
+  [TestMethod]
+  public void IsTriangleTracker_CheckForTypeOfTriangle_Isosceles()
+  {
+    TriangleTracker testTriangle = new TriangleTracker(2,4,5);
+    Assert.AreEqual("Isosceles", testTriangle.IsTriangleTracker());
+  }
 
   }
 }
