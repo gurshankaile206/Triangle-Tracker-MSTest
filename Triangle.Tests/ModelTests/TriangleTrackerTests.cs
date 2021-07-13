@@ -7,13 +7,13 @@ namespace Triangle.Tests
   [TestClass]
   public class TriangleTrackerTests
   {
-    // [TestMethod]
-    // public void IsTriangleTracker_CreateTriangleWithThreeLengths_Triangle()
-    // {
-    //   TriangleTracker testTriangle = new TriangleTracker(); 
-    //   // any necessary logic to prep for test; instantiating new classes, etc.
-    //   Assert.AreEqual("Triangle", testTriangle.IsTriangleTracker());
-    // }
+    [TestMethod]
+    public void IsTriangleTracker_CreateTriangleWithThreeLengths_Triangle()
+    {
+      TriangleTracker testTriangle = new TriangleTracker(1,2,100); 
+      // any necessary logic to prep for test; instantiating new classes, etc.
+      Assert.AreEqual("Not a Triangle", testTriangle.IsTriangleTracker());
+    }
     [TestMethod]
     public void IsTriangleTracker_CheckForTypeOfTriangle_Isosceles()
     {
