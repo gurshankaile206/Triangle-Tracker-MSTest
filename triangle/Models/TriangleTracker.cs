@@ -14,7 +14,11 @@ namespace Triangle
     }
     public string IsTriangleTracker()
     {
-      if (Side1 == Side2 || Side1 == Side3 || Side2 == Side3)
+      if (Side1 == Side2 && Side2 == Side3) 
+      {
+        return "Equilateral";
+      }
+      else if (Side1 == Side2 || Side1 == Side3 || Side2 == Side3)
       {
         return "Isosceles";
       }
@@ -22,8 +26,7 @@ namespace Triangle
       {
         return "Triangle";
       }
-      
-      
+
     }
   }
 }
