@@ -24,7 +24,7 @@ namespace Triangle
       }
       else
       {
-        return "Triangle";
+        return "Scalene";
       }
 
     }
