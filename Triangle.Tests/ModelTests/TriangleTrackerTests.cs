@@ -23,9 +23,14 @@ namespace Triangle.Tests
     [TestMethod]
     public void IsTriangleTracker_CheckForTypeOfTriangle_Equilateral()
     {
-      TriangleTracker testTriangle = new TriangleTracker(4,4,4);
+      TriangleTracker testTriangle = new TriangleTracker(3,3,3);
       Assert.AreEqual("Equilateral", testTriangle.IsTriangleTracker());
     }
-
+    [TestMethod]
+    public void IsTriangleTracker_CheckForTypeOfTriangle_Scalene()
+    {
+      TriangleTracker testTriangle = new TriangleTracker(3,5,7);
+      Assert.AreEqual("Scalene", testTriangle.IsTriangleTracker());
+    }
   }
 }
